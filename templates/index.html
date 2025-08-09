@@ -8,38 +8,174 @@
       h1 {
         @apply text-[2rem] font-bold;
       }
+      /* Stile personalizzato per nascondere la freccia di default e mostrare il cursore a mano */
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+      }
+      /* Rimuove l'anello di focus di default */
+      select:focus {
+        outline: none;
+        box-shadow: none;
+      }
     </style>
-    <title>TikTok</title>
+    <title>Login | TikTok</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../static/images/tiktok.png"
+      href="../static/images/favicon.ico"
     />
   </head>
   <body>
-    <header class="sticky top-0 z-10">
-      <div class="bg-white h-[60px] flex items-center px-2.5">
-        <a href="/">
-          <img src="../static/images/tiktok.png" alt="" />
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="max-w-xs mx-auto text-center pt-16">
-        <h1 class="pb-6">Log in to TikTok</h1>
-        <p class="text-[#16182357] text-sm leading-4.5 pb-6">
-          Manage your account, check notifications, comment on videos, and more.
-        </p>
-        <div class="">
-          <a
-            href=""
-            class="block p-3 rounded-lg border border-neutral-300 hover:bg-neutral-100 text-center font-medium text-sm"
-          >
-            User email / username
-          </a>
+    <div class="min-h-[100dvh] grid grid-rows-[auto_1fr_auto]">
+      <header class="sticky top-0 z-10">
+        <div class="flex flex-row items-center justify-between">
+          <div class="bg-white h-[60px] flex items-center px-2.5">
+            <a href="/">
+              <img src="../static/images/tiktok.png" alt="" />
+            </a>
+          </div>
+          <div class="pr-4 flex items-center flex-row gap-2">
+            <div class="left-[-28px]">
+              <svg
+                class=""
+                width="1.2em"
+                data-e2e=""
+                height="1.2em"
+                viewBox="0 0 48 48"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6ZM2 24C2 11.8497 11.8497 2 24 2C36.1503 2 46 11.8497 46 24C46 36.1503 36.1503 46 24 46C11.8497 46 2 36.1503 2 24ZM24.0909 15C22.172 15 20.3433 16.2292 19.2617 18.61C19.0332 19.1128 18.4726 19.4 17.9487 19.2253L16.0513 18.5929C15.5274 18.4182 15.2406 17.8497 15.4542 17.3405C16.9801 13.7031 20.0581 11 24.0909 11C28.459 11 32 14.541 32 18.9091C32 21.2138 30.7884 23.4606 29.2167 25.074C27.8157 26.5121 25.5807 27.702 22.9988 27.9518C22.4491 28.0049 22.0001 27.5523 22.0001 27V25C22.0001 24.4477 22.4504 24.0057 22.9955 23.9167C24.2296 23.7153 25.5034 23.1533 26.3515 22.2828C27.4389 21.1666 28 19.8679 28 18.9091C28 16.7502 26.2498 15 24.0909 15ZM24 36C22.3431 36 21 34.6569 21 33C21 31.3431 22.3431 30 24 30C25.6569 30 27 31.3431 27 33C27 34.6569 25.6569 36 24 36Z"
+                ></path>
+              </svg>
+            </div>
+            <a href="" class="font-medium text-sm hover:underline"
+              >Feedback and help</a
+            >
+          </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
+      </header>
+      <main>
+        <div class="max-w-[340px] mx-auto text-center pt-16">
+          <h1 class="pb-6">Log in to TikTok</h1>
+          <p class="text-[#16182357] max-w-[300px] text-sm leading-4.5 pb-6">
+            Manage your account, check notifications, comment on videos, and
+            more.
+          </p>
+          <div class="flex flex-col gap-3">
+            <a
+              href=""
+              class="block p-3 relative rounded-lg border border-neutral-300 hover:bg-neutral-100 text-center font-medium text-sm"
+            >
+              <div class="w-5 h-5 absolute left-4">
+                <svg viewBox="0 0 48 48">
+                  <path
+                    d="M24.0003 7C20.1343 7 17.0003 10.134 17.0003 14C17.0003 17.866 20.1343 21 24.0003 21C27.8663 21 31.0003 17.866 31.0003 14C31.0003 10.134 27.8663 7 24.0003 7ZM13.0003 14C13.0003 7.92487 17.9252 3 24.0003 3C30.0755 3 35.0003 7.92487 35.0003 14C35.0003 20.0751 30.0755 25 24.0003 25C17.9252 25 13.0003 20.0751 13.0003 14ZM24.0003 33C18.0615 33 13.0493 36.9841 11.4972 42.4262C11.3457 42.9573 10.8217 43.3088 10.2804 43.1989L8.32038 42.8011C7.77914 42.6912 7.4266 42.1618 7.5683 41.628C9.49821 34.358 16.1215 29 24.0003 29C31.8792 29 38.5025 34.358 40.4324 41.628C40.5741 42.1618 40.2215 42.6912 39.6803 42.8011L37.7203 43.1989C37.179 43.3088 36.6549 42.9573 36.5035 42.4262C34.9514 36.9841 29.9391 33 24.0003 33Z"
+                  ></path>
+                </svg>
+              </div>
+              <p>User email / username</p>
+            </a>
+            <a
+              href=""
+              class="block p-3 relative rounded-lg border border-neutral-300 hover:bg-neutral-100 text-center font-medium text-sm"
+            >
+              <div class="w-5 h-5 absolute left-4">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    fill="#1877F2"
+                    d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03h-2.5v-2.9h2.5V9.41c0-2.46 1.49-3.82 3.74-3.82 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54v1.84h2.72l-.44 2.9h-2.28v7.03c4.78-.75 8.44-4.91 8.44-9.93z"
+                  />
+                </svg>
+              </div>
+              <p>Continue with Facebook</p>
+            </a>
+            <a
+              href=""
+              class="block p-3 relative rounded-lg border border-neutral-300 hover:bg-neutral-100 text-center font-medium text-sm"
+            >
+              <div class="w-5 h-5 absolute left-4">
+                <svg viewBox="0 0 48 48">
+                  <path
+                    fill="#FFC107"
+                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                  ></path>
+                  <path
+                    fill="#FF3D00"
+                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                  ></path>
+                  <path
+                    fill="#4CAF50"
+                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                  ></path>
+                  <path
+                    fill="#1976D2"
+                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                  ></path>
+                </svg>
+              </div>
+              <p>Continue with Google</p>
+            </a>
+            <a
+              href=""
+              class="block p-3 relative rounded-lg border border-neutral-300 hover:bg-neutral-100 text-center font-medium text-sm"
+            >
+              <div class="w-5 h-5 absolute left-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M 16.125 1 C 14.972 1.067 13.648328 1.7093438 12.861328 2.5273438 C 12.150328 3.2713438 11.589359 4.3763125 11.818359 5.4453125 C 13.071359 5.4783125 14.329031 4.8193281 15.082031 3.9863281 C 15.785031 3.2073281 16.318 2.12 16.125 1 z M 16.193359 5.4433594 C 14.384359 5.4433594 13.628 6.5546875 12.375 6.5546875 C 11.086 6.5546875 9.9076562 5.5136719 8.3476562 5.5136719 C 6.2256562 5.5146719 3 7.4803281 3 12.111328 C 3 16.324328 6.8176563 21 8.9726562 21 C 10.281656 21.013 10.599 20.176969 12.375 20.167969 C 14.153 20.154969 14.536656 21.011 15.847656 21 C 17.323656 20.989 18.476359 19.367031 19.318359 18.082031 C 19.922359 17.162031 20.170672 16.692344 20.638672 15.652344 C 17.165672 14.772344 16.474672 9.1716719 20.638672 8.0136719 C 19.852672 6.6726719 17.558359 5.4433594 16.193359 5.4433594 z"
+                  ></path>
+                </svg>
+              </div>
+              <p>Continue with Apple</p>
+            </a>
+          </div>
+          <div class="bg-yellow pt-4 mx-auto pb-10 text-center">
+            <p class="text-[#16182357] text-xs leading-4.5 pb-6">
+              By continuing you will accept TikTok
+              <a href="" class="text-black font-medium hover:underline"
+                >Terms of Service</a
+              >
+              and confirm that you have read TikTok
+              <a href="" class="text-black font-medium hover:underline"
+                >Privacy Policy</a
+              >.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <p
+            class="text-center text-sm text-neutral-600 p-5 border-t border-neutral-200"
+          >
+            Don't have an account?
+            <a href="" class="text-rose-400 font-medium hover:underline"
+              >Sign up</a
+            >
+          </p>
+        </div>
+        <div
+          class="bg-black flex h-21 flex-row items-center justify-between p-2"
+        >
+          <div class="ml-34">
+            <select
+              class="bg-transparent w-42 h-9 text-left text-sm text-neutral-200 border border-neutral-400 pl-4 rounded rounded-xs cursor-pointer focus:outline-none focus:ring-0"
+            >
+              <option value="en-uk">English (UK)</option>
+              <option value="it">Italiano</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <p class="mr-34 text-xs text-neutral-400">&copy; 2025 TikTok</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
