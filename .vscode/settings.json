@@ -1,10 +1,7 @@
 {
   "eslint.enable": false,
-    "editor.formatOnSave": true,
-  "[html]": {
+  "editor.formatOnSave": true,
+  "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
     "editor.defaultFormatter": "monosans.djlint"
-  },
-  "[django-html]": {
-    "editor.defaultFormatter": "monosans.djlint"
+    }
   }
-}
